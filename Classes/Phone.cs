@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Lab3.Classes {
     internal class Phone {
-        public int number { get; set; }
-        public string model { get; set; }
-        public int weight { get; set; }
+        private int number { get; set; }
+        private string model { get; set; }
+        private int weight { get; set; }
         public Phone(int num, string mod, int wei) 
         {
             number = num;
@@ -36,7 +36,6 @@ namespace Lab3.Classes {
                 sb.Append(n.ToString("+375 (44) ###-##-##\n"));
             }
             return sb.ToString();
-            
         }
 
     }

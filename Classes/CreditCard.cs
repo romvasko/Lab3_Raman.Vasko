@@ -15,15 +15,13 @@ namespace Lab3.Classes
             this.number = number;
             this.cash = cash;
         }
-        public int AddCash(int sum)
+        public void AddCash(int sum)
         {
             cash += sum;
-            return 0;
         }
-       public int GetCash(int sum)
+       public void GetCash(int sum)
         {
             cash -= sum;
-            return 0;
         }
         public override string ToString()
         {

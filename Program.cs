@@ -9,17 +9,19 @@ namespace Lab3
 {
     internal class Program {
         static void Main(string[] args) {
-            List<CreditCard> creditCards = new List<CreditCard>();
-            creditCards.Add(new CreditCard("111",200));
-            creditCards.Add(new CreditCard("222",200));
-            creditCards.Add(new CreditCard("333",999));
-            creditCards[0].AddCash(10);
-            creditCards[1].AddCash(20);
-            creditCards[2].GetCash(999);
-            foreach (var item in creditCards)
-            {
-                Console.WriteLine(item); 
-            }
+
+
+            //List<CreditCard> creditCards = new List<CreditCard>();
+            //creditCards.Add(new CreditCard("111",200));
+            //creditCards.Add(new CreditCard("222",200));
+            //creditCards.Add(new CreditCard("333",999));
+            //creditCards[0].AddCash(10);
+            //creditCards[1].AddCash(20);
+            //creditCards[2].GetCash(999);
+            //foreach (var item in creditCards)
+            //{
+            //    Console.WriteLine(item); 
+            //}
 
 
 

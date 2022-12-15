@@ -1,15 +1,37 @@
-﻿// See https://aka.ms/new-console-template for more information
-
-
-
+﻿
 
 using Lab3.Classes;
+using Lab3.Homework.ATM;
+using Lab3.Homework.Clinic;
+using Lab3.Homework.Computer;
 
 namespace Lab3 
 {
     internal class Program {
         static void Main(string[] args) {
 
+
+            Computer computer = new Computer(5000, "Lenovo");
+            Console.WriteLine(computer);
+            Computer computer1 = new Computer(3000, "HP",new RAM("DDR4","16gb"),
+                new HDD("Samsung","512gb","external"));
+            Console.WriteLine(computer1);
+
+            ATM atm = new ATM(10,10,10);
+            Console.WriteLine(atm);
+            Console.WriteLine(atm.AddMoney(150));
+            Console.WriteLine(atm);
+            Console.WriteLine(atm.RemoveMoney(890));
+            Console.WriteLine(atm);
+            Console.WriteLine(atm.RemoveMoney(1500));
+            Console.WriteLine(atm);
+
+            Patient p = new Patient(new CurePlan(1));
+            Console.WriteLine(p.GetCure());
+            Patient p1 = new Patient(new CurePlan(2));
+            Console.WriteLine(p1.GetCure());
+            Patient p2 = new Patient(new CurePlan());
+            Console.WriteLine(p2.GetCure());
 
             //List<CreditCard> creditCards = new List<CreditCard>();
             //creditCards.Add(new CreditCard("111",200));
@@ -22,8 +44,6 @@ namespace Lab3
             //{
             //    Console.WriteLine(item); 
             //}
-
-
 
             // List<Phone> phoneList = new List<Phone>();
             // phoneList.Add(new Phone(7777777, "Nokia", 120));
@@ -38,8 +58,8 @@ namespace Lab3
             // }
             // Console.WriteLine(Phone.SendMessage(1000000, 4561223, 7897889)); 
         }
-   
 
-	}
+
+    }
 
 }

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace Lab3.Homework.Clinic {
     internal class Doctor {
         public virtual string Cure() {
-            return "How do get here?";
+            return "";
         }
     }
 }
